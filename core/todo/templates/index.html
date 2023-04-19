@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="widht=device, user-scaleble=no, inistal-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>index</title>
+</head>
+{% for todo in todos %}
+    Задача: {{ todo.title }}
+    <br>
+    {% if todo.complete == False %}
+        Задача не выполнена
+    {% else %}
+        Задача выполнена
+    {% endif %}
+    <br>
+    <br>
+{% endfor %}
+<body>
+
+</body>
+
+</html>
